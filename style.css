@@ -1,40 +1,35 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, #f9fbff, #e3edff);
-  color: #333;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+  max-width: 900px;
+  margin: 30px auto;
+  line-height: 1.6;
 }
 
-header {
+header, footer {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #004b8d;
-  color: white;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  padding: 40px;
+h1 {
+  color: #61dafb;
 }
 
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ul li {
+  list-style: none;
+  margin: 10px 0;
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+ul li:hover {
+  background: #3b3b3b;
+}
+
+a {
+  color: #61dafb;
   text-decoration: none;
-  color: #333;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-h3 {
-  color: #004b8d;
+  font-weight: bold;
 }
