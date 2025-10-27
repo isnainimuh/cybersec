@@ -5,23 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modul Keamanan Sistem Informasi dan Jaringan</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
 </head>
 <body>
-  <header>
-    <h1>🤖 Modul Pembelajaran: Keamanan Sistem Informasi dan Jaringan</h1>
-    <p>Dosen: Isnaini Muhandhis, S.Kom, M.Kom</p>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>🤖 Modul Pembelajaran: Keamanan Sistem Informasi dan Jaringan</h1>
+      <p>Dosen: Isnaini Muhandhis, S.Kom, M.Kom</p>
+      <a href="#materi" class="btn-primary">Mulai Belajar</a>
+    </div>
   </header>
 
-  <main>
-    <h2>Materi</h2>
-    <ul>
-      <li><a href="bab1.html">Bab 1 – Damn Vulnerable Web Apps (DVWA)</a></li>
-      <li><a href="bab2.html">Bab 2 – Brute Force Login</a></li>
-    </ul>
+  <main id="materi">
+    <h2>📘 Daftar Materi</h2>
+    <div class="card-grid">
+      <a class="card" href="bab1.html">
+        <h3>Bab 1</h3>
+        <p>Pengenalan Machine Learning</p>
+      </a>
+      <a class="card" href="bab2.html">
+        <h3>Bab 2</h3>
+        <p>Regresi Linear & Evaluasi Model</p>
+      </a>
+      <a class="card" href="bab3.html">
+        <h3>Bab 3</h3>
+        <p>Klasifikasi dengan Decision Tree</p>
+      </a>
+    </div>
+
+    <section class="example">
+      <h2>💻 Contoh Kode Python</h2>
+      <div class="code-block">
+        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        <pre><code class="language-python">
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Data sederhana
+X = np.array([[1], [2], [3], [4]])
+y = np.array([2, 4, 6, 8])
+
+model = LinearRegression()
+model.fit(X, y)
+
+pred = model.predict([[5]])
+print("Prediksi untuk x=5:", pred)
+        </code></pre>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Universitas Wijaya Putra</p>
+    <p>© 2025 Universitas Wijaya Putra | Machine Learning Module</p>
   </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 </body>
 </html>
